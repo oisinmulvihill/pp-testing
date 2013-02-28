@@ -22,8 +22,6 @@ class MongoConfiguredWebService(pyramid_server.PyramidTestServer):
     """
     def __init__(self, **kwargs):
         self.request = kwargs['request']
-        # XXX use uname? 
-        kwargs['hostname'] = 'devbox.example.com'
         super(MongoConfiguredWebService, self).__init__(**kwargs)
         self.api = kwargs['rest_api_class'](self.uri)
 
