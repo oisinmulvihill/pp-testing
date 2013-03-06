@@ -22,6 +22,7 @@ class MongoConfiguredWebService(pyramid_server.PyramidTestServer):
     """
     def __init__(self, **kwargs):
         self.request = kwargs['request']
+        self.port_seed = kwargs['port_seed']
         super(MongoConfiguredWebService, self).__init__(**kwargs)
         self.api = kwargs['rest_api_class'](self.uri)
 
