@@ -39,8 +39,6 @@ PackageData = {
 }
 
 
-# [console] ??
-#     testing = pp.testing.scripts.app:main
 EntryPoints = """
 """
 
